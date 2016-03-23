@@ -11,3 +11,28 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  Caos-child
 */
+
+
+body {
+    background: black;
+}
+
+p {
+    color: white;
+}
+
+#jqueryslidemenu ul.nav > li > a {
+    opacity: 0.7;
+    font-size: 24px;
+}
+
+#jqueryslidemenu ul.nav > li > a:hover {
+    opacity: 1;
+    font-size: 24px;
+}
+
+#jqueryslidemenu ul.nav > li > a:active {
+    opacity: 1;
+    font-size: 24px;
+}
+
