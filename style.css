@@ -30,6 +30,10 @@ p {
   * Header
   */
 
+.single #header{
+    position: relative;
+}
+
 .site-header .logo_container{
     width: auto;
     float: left;
