@@ -14,11 +14,11 @@
 
 
 body {
-    background: black;
+    background: #1a1a1a;
 }
 
 p {
-    color: white;
+    color: #eee;
 }
 
 #jqueryslidemenu ul.nav > li > a {
