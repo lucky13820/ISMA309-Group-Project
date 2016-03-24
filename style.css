@@ -13,12 +13,48 @@
 */
 
 
+/**
+  * General
+  */
+
 body {
     background: #1a1a1a;
 }
 
 p {
     color: #eee;
+}
+
+
+/**
+  * Header
+  */
+
+.site-header .logo_container{
+    width: auto;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.site-header .logo_container .site-title{
+    line-height: 42px;
+    margin: 0;
+    padding: 0;
+}
+
+.site-header .col-md-7{
+    width: auto;
+    float: right;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#jqueryslidemenu ul.nav>li>a{
+    margin: 0;
+    padding: 0 0 0 30px;
+    line-height: 42px;
 }
 
 #jqueryslidemenu ul.nav > li > a {
