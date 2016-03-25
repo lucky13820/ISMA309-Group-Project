@@ -15,18 +15,6 @@
 </div><!-- /#container -->
 <?php } ?>
 
-	<div class="sub-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7">
-                    <?php get_template_part( '/template-parts/social-menu', 'footer' ); ?>
-                </div>
-
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </div><!-- .sub-footer -->
-
-
 <?php wp_footer(); ?>
 
 </body>
