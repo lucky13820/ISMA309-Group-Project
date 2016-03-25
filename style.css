@@ -187,7 +187,6 @@ p {
     height: 0;
     overflow: hidden;
     background-color: #1a1a1a;
-    box-shadow: 0 0 0 1px rgba(255,255,255,0.17);
 }
 
 .post-box:nth-child(4n){
@@ -200,7 +199,7 @@ p {
 
 .archive .row:hover .post-box{
     max-width: 10%;
-    opacity: 0.3;
+    opacity: 0.15;
 }
 
 .archive .row .post-box:hover{
@@ -222,31 +221,116 @@ p {
     float: left;
 }
 
-.post-box .post-box-container{
+.archive .post-box .post-box-container{
 /*    padding: 15px;*/
     box-sizing: border-box;
 }
 
-.post-box .post-box-text{
+.archive .post-box .post-box-text{
     margin: 0;
     padding: 0 3vw;
     width: 40.5vw;
     height: 36.44vw;
-    background-color: rgba(255,255,255,0.05);
-    position: static;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     float: right;
 }
 
+.archive .post-box .post-box-text h2{
+    margin: 20px 0 15px;
+    max-height: 104px;
+    overflow: hidden;
+}
 
-/******   force hovering on the third post-box   ******/
+.archive .post-box .post-box-text h2 a{
+    font-size: 40px;
+    line-height: 1.3;
+}
+
+.archive .post-box .post-box-text>span{
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0 10px 30px 0;
+    color: #555;
+}
+
+.archive .post-box .post-box-text>span a{
+    font-size: 10px;
+    line-height: 0;
+    padding: 10px 8px;
+    background-color: #444;
+    border-radius: 2px;
+    vertical-align: middle;
+}
+
+.archive .post-box .post-box-text>span a:hover{
+    text-decoration: none;
+}
+
+.archive .post-box .post-box-text>p:first-of-type{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 0 0 15px;
+}
+
+.archive .post-box .post-box-text>p:nth-of-type(2){
+    font-size: 20px;
+    line-height: 1.3;
+    display: block;
+/*    height: calc();*/
+    max-height: 260px;
+    overflow: hidden;
+    margin: 0 0 30px;
+}
+
+.trailer_movie{
+    position: absolute;
+    bottom: 15%;
+}
+
+.trailer_movie p{
+    float: left;
+    font-size: 20px;
+    line-height: 0;
+    width: 140px;
+    padding: 30px 0;
+    text-align: center;
+    background-color: #444;
+    margin: 0 1px 0 0;
+    transition: all 0.3s ease;
+}
+
+.trailer_movie p:hover{
+    color: #ddd;
+    background-color: #666;
+}
+
+.trailer_movie p:first-of-type{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.trailer_movie p:last-of-type{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
 
 
+/***vvv   force hovering on the third post-box   vvv***/
+/*
 .archive .row .post-box:nth-of-type(1n),
 .archive .row .post-box:nth-of-type(2n){
     max-width: 10%;
-    opacity: 0.3;
+    opacity: 0.15;
 }
 .archive .row .post-box:nth-of-type(3n){
     max-width: 70%;
     opacity: 1;
 }
+*/
+/***^^^   force hovering on the third post-box   ^^^***/
