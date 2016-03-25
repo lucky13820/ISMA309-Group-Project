@@ -32,6 +32,7 @@ p {
 
 .single #header{
     position: relative;
+    margin-bottom: 0;
 }
 
 .site-header .logo_container{
@@ -91,7 +92,9 @@ p {
 }
 
 .post-content-info{
-    margin: 50px 80px 0;
+    margin: 50px auto 0;
+    padding: 0 80px;
+    max-width: 1200px;
 }
 
 .post-content-info .video-content{
