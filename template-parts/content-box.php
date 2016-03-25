@@ -12,18 +12,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('post-box'); ?> data-href="<?php the_permalink(); ?>">
 
 	<div class="post-box-container">
-        <?php 
-        if ( is_sticky() ) {
-             echo '<i class="fa fa-star"></i>';
-         }
-        ?>
-		<?php
-        $thumbnail_src = "";
-		if ( has_post_thumbnail() ) :
-			$thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'caos_post');
-			$thumbnail_src = $thumbnail_src[0];
-		endif;
-		?>
         <div class="post-box-image" style="background-image: url(<?php the_field('poster'); ?>);"><span></span></div>
         <div class="post-box-text">
             <?php
