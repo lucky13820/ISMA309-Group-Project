@@ -171,8 +171,9 @@ p {
     padding: 0 5%;
 }
 
-.post-box-image{
-    box-shadow: none;
+.post-box-image,
+.post-box-image:hover{
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.17);
 }
 
 .archive article,
