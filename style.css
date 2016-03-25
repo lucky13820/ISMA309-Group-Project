@@ -86,7 +86,7 @@ p {
 .post-content-video{
     width: 100vw;
     height: 56.25vw;
-    margin: 0 0 80px;
+    margin: 0 auto 80px;
     padding: 0;
     overflow: hidden;
 }
