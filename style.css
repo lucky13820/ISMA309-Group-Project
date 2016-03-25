@@ -73,3 +73,9 @@ p {
     background-color: transparent;
 }
 
+/* Archive - Posters */
+
+.post-box .post-box-image span {
+    display: none;
+}
+
