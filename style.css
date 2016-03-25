@@ -137,12 +137,13 @@ p {
     padding-bottom: 100%;
     margin-bottom: 40px;
     overflow: hidden;
+    position: relative;
 }
 
 .post-content-info .artist-content .artist-photo img.wide{
     height: 100%;
     max-width: none;    
-    position: relative;
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -150,7 +151,7 @@ p {
 .post-content-info .artist-content .artist-photo img.tall{
     width: 100%;
     height: auto;
-    position: relative;
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
