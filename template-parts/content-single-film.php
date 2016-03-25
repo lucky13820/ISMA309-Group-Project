@@ -30,7 +30,9 @@
             <div class="video-content">
                 <?php the_title( '<h1 class="post-title">', '</h1>' ); ?>
                 <p class="tagline"><?php the_field('tagline');?></p>
+                <h2>Artist Statement</h2>
                 <p class="artist-statement"><?php the_field('artist_statement');?></p>
+                <h2>Project Description</h2>
                 <p class="project-description"><?php the_field('project_description_synopsis');?></p>
             </div>
             <div class="artist-content">

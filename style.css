@@ -106,6 +106,22 @@ p {
     margin-right: 30px;
 }
 
+.post-content-info .video-content .post-title{
+    text-align: left;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.post-content-info .video-content h2{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.post-content-info .video-content p{
+    margin-bottom: 60px;
+}
+
 .post-content-info .artist-content .artist-photo{
     background-color: #444;
     width: 100%;
