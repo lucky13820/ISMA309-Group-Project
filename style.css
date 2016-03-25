@@ -137,3 +137,18 @@ p {
     font-size: 1.2em;
     font-weight: bold;
 }
+
+
+/* Archive - Posters */
+
+.post-box .post-box-image span {
+    display: none;
+}
+
+.post-box-text {
+    display: none;
+}
+
+.post-box:hover .post-box-text {
+    display: inline;
+}
