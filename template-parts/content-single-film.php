@@ -22,7 +22,7 @@
 
     <div class="post-content">
     	<div class="post-content-video">
-    	    <video class="trailer" src="<?php the_field('trailer');?>"></video>
+    	    <video class="movie" src="<?php the_field('film');?>"></video>
     	</div>
         <div class="post-content-info">
             <div class="video-content">
