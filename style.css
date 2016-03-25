@@ -73,3 +73,34 @@ p {
     background-color: transparent;
 }
 
+
+/**
+  * Film posts
+  */
+
+.film .post-content{
+    padding: 0;
+}
+
+.post-content-video{
+    width: 100vw;
+    height: 56.25vw;
+    background-color: #444;
+    margin: 0;
+    padding: 0;
+}
+
+.post-content-info{
+    margin: 50px 80px 0;
+}
+
+.post-content-info .video-content{
+    width: 75%;
+    float: right;
+}
+
+.post-content-info .artist-content{
+    width: calc(25% - 30px);
+    float: left;
+    margin-right: 30px;
+}
