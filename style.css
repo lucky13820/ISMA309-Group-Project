@@ -166,6 +166,68 @@ p {
   * Archive - Posters
   */
 
+.archive .container{
+    width: 100%;
+    padding: 0 5%;
+}
+
+.post-box-image{
+    box-shadow: none;
+}
+
+.archive article,
+.post-box:nth-child(2n),
+.post-box:nth-child(3n){
+    margin: 0;
+    padding: 0 0 38.5vw 0;
+    float: left;
+    width: 100%;
+    max-width: 25%;
+    height: 0;
+    overflow: hidden;
+    background-color: #1a1a1a;
+}
+
+.post-box:nth-child(4n){
+    margin-right: 0;
+}
+
+.archive .row{
+    margin: 0 auto 30px;
+}
+
+.archive .row:hover .post-box{
+    max-width: 10%;
+    opacity: 0.3;
+}
+
+.archive .row .post-box:hover{
+    max-width: 70%;
+    opacity: 1;
+}
+
+.archive .post-box .post-box-container{
+    height: 40vw;
+    width: 22.5vw;
+    padding: 1vw;
+}
+
+.archive .post-box .post-box-image{
+    width: 100%;
+    padding-bottom: 177.778%;
+}
+
+.post-box .post-box-image span{
+    background: transparent;
+}
+
+.post-box .post-box-container{
+/*    padding: 15px;*/
+    box-sizing: border-box;
+}
+
+
+/*
 .post-box .post-box-image span {
     display: none;
 }
@@ -177,3 +239,4 @@ p {
 .post-box:hover .post-box-text {
     display: inline;
 }
+*/
