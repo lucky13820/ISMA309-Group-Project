@@ -22,9 +22,7 @@
 
     <div class="post-content">
     	<div class="post-content-video">
-    	    <video class="trailer" autoplay="autoplay">
-                <?php the_field('trailer');?>
-            </video>
+    	    <video class="trailer" src="<?php the_field('trailer');?>"></video>
     	</div>
         <div class="post-content-info">
             <div class="video-content">
@@ -37,7 +35,7 @@
             </div>
             <div class="artist-content">
                 <div class="artist-photo">
-                    <img src="<?php the_field('artist_photo',12);?>" alt="">
+                    <img src="<?php the_field('artist_photo'); ?>" alt="">
                 </div>
                 <p class="artist_name"><?php the_field('artist_name');?></p>
             </div>
@@ -57,3 +55,11 @@
 
 </article><!-- #post-## -->
 
+<script>
+    jQuery(window).load(function(){
+     jQuery('.artist-photo').find('img').each(function(){
+      var imgClass = (this.width/this.height > 1) ? 'wide' : 'tall';
+      jQuery(this).addClass(imgClass);
+     })
+    })
+</script>
