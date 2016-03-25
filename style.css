@@ -187,6 +187,7 @@ p {
     height: 0;
     overflow: hidden;
     background-color: #1a1a1a;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.17);
 }
 
 .post-box:nth-child(4n){
@@ -208,17 +209,44 @@ p {
 }
 
 .archive .post-box .post-box-container{
-    height: 40vw;
-    width: 22.5vw;
+    height: 38.44vw;
+    width: 63vw;
+    margin: 0;
     padding: 1vw;
 }
 
 .archive .post-box .post-box-image{
-    width: 100%;
-    padding-bottom: 177.778%;
+    width: 20.5vw;
+    height: 36.44vw;
+    padding: 0;
+    float: left;
 }
 
 .post-box .post-box-container{
 /*    padding: 15px;*/
     box-sizing: border-box;
+}
+
+.post-box .post-box-text{
+    margin: 0;
+    padding: 0 3vw;
+    width: 40.5vw;
+    height: 36.44vw;
+    background-color: rgba(255,255,255,0.05);
+    position: static;
+    float: right;
+}
+
+
+/******   force hovering on the third post-box   ******/
+
+
+.archive .row .post-box:nth-of-type(1n),
+.archive .row .post-box:nth-of-type(2n){
+    max-width: 10%;
+    opacity: 0.3;
+}
+.archive .row .post-box:nth-of-type(3n){
+    max-width: 70%;
+    opacity: 1;
 }
