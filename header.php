@@ -46,9 +46,9 @@ if( is_plugin_active( 'rest-api/plugin.php' ) ){
                     $logo = $logo[0];
                     ?>
                     <?php if ( is_front_page() && is_home() ) : ?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="ql_logo"><?php if ( !empty( $logo ) ) : echo '<img src="' . esc_url( $logo ) . '" />'; else: bloginfo( 'name' ); endif; ?></a></h1>
+						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="ql_logo"><?php if ( !empty( $logo ) ) : echo '<img src="http://localhost:8888/mod/wp-content/uploads/2016/03/Group.png" />'; else: bloginfo( 'name' ); endif; ?></a></h1>
 					<?php else : ?>
-						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="ql_logo"><?php if ( !empty( $logo ) ) : echo '<img src="' . esc_url( $logo ) . '" />'; else: bloginfo( 'name' ); endif; ?></a></p>
+						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="ql_logo"><img src="http://localhost:8888/mod/wp-content/uploads/2016/03/Group.png" /></a></p>
 					<?php endif; ?>
                 </div><!-- /logo_container -->
 
@@ -61,7 +61,7 @@ if( is_plugin_active( 'rest-api/plugin.php' ) ){
                 	<div class="collapse navbar-collapse" id="ql_nav_collapse">
                         <nav id="jqueryslidemenu" class="jqueryslidemenu navbar " role="navigation">
                             <?php
-                            wp_nav_menu( array(                     
+                            wp_nav_menu( array(
                                 'theme_location'  => 'primary',
                                 'menu_id' => 'primary-menu',
                                 'depth'             => 3,
@@ -78,7 +78,7 @@ if( is_plugin_active( 'rest-api/plugin.php' ) ){
 
 	</header>
 	<div class="clearfix"></div>
-    
+
     <?php if ( !is_single() ) { ?>
     <div id="container" class="container">
     <?php } ?>
