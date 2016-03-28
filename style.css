@@ -161,6 +161,21 @@ p {
     font-weight: bold;
 }
 
+.featured-media{
+  width: 1080px;
+  margin: auto;
+}
+
+p.artist-statement {
+  word-break: break-all;
+  width: 600px;
+}
+
+p.project-description{
+  word-break: break-all;
+  width: 600px;
+}
+
 
 /**
   * Archive - Posters
@@ -180,7 +195,7 @@ p {
 .post-box:nth-child(2n),
 .post-box:nth-child(3n){
     margin: 0;
-    padding: 0 0 38.5vw 0;
+    padding: 0 0 31.68vw 0;
     float: left;
     width: 100%;
     max-width: 25%;
@@ -208,7 +223,7 @@ p {
 }
 
 .archive .post-box .post-box-container{
-    height: 38.44vw;
+    height: 31.68vw;
     width: 63vw;
     margin: 0;
     padding: 1vw;
@@ -216,7 +231,7 @@ p {
 
 .archive .post-box .post-box-image{
     width: 20.5vw;
-    height: 36.44vw;
+    height: 100%;
     padding: 0;
     float: left;
 }
@@ -230,7 +245,7 @@ p {
     margin: 0;
     padding: 0 3vw;
     width: 40.5vw;
-    height: 36.44vw;
+    height: 31.68vw;
     position: relative;
     top: 0;
     bottom: 0;
@@ -320,26 +335,330 @@ p {
     border-bottom-right-radius: 4px;
 }
 
-.featured-media{
-  width: 1080px;
-  margin: auto;
+
+/**
+  * page-id-2 - artist
+  */
+
+.page-id-2 .container{
+    width: 100%;
+    padding: 0 5%;
 }
 
-p.artist-statement {
-  word-break: break-all;
-  width: 600px;
+.post-box-image,
+.post-box-image:hover{
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.17);
 }
 
-p.project-description{
-  word-break: break-all;
-  width: 600px;
+.page-id-2 article,
+.post-box:nth-child(2n),
+.post-box:nth-child(3n){
+    margin: 0;
+    padding: 0 0 31.68vw 0;
+    float: left;
+    width: 100%;
+    max-width: 25%;
+    height: 0;
+    overflow: hidden;
+    background-color: #1a1a1a;
+}
+
+.post-box:nth-child(4n){
+    margin-right: 0;
+}
+
+.page-id-2 .row{
+    margin: 0 auto 30px;
+}
+
+.page-id-2 .row:hover .post-box{
+    max-width: 10%;
+    opacity: 0.15;
+}
+
+.page-id-2 .row .post-box:hover{
+    max-width: 70%;
+    opacity: 1;
+}
+
+.page-id-2 .post-box .post-box-container{
+    height: 31.68vw;
+    width: 63vw;
+    margin: 0;
+    padding: 1vw;
+}
+
+.page-id-2 .post-box .post-box-image{
+    width: 20.5vw;
+    height: 100%;
+    padding: 0;
+    float: left;
+}
+
+.page-id-2 .post-box .post-box-container{
+/*    padding: 15px;*/
+    box-sizing: border-box;
+}
+
+.page-id-2 .post-box .post-box-text{
+    margin: 0;
+    padding: 0 3vw;
+    width: 40.5vw;
+    height: 31.68vw;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    float: right;
+}
+
+.page-id-2 .post-box .post-box-text h2{
+    margin: 20px 0 15px;
+    max-height: 104px;
+    overflow: hidden;
+}
+
+.page-id-2 .post-box .post-box-text h2 a{
+    font-size: 35px;
+    line-height: 1.3;
+}
+
+.page-id-2 .post-box .post-box-text>span{
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-block;
+    margin: 0 10px 30px 0;
+    color: #555;
+}
+
+.page-id-2 .post-box .post-box-text>span a{
+    font-size: 12px;
+    line-height: 0;
+    padding: 10px 8px;
+    background-color: #444;
+    border-radius: 2px;
+    vertical-align: middle;
+}
+
+.page-id-2 .post-box .post-box-text>span a:hover{
+    text-decoration: none;
+}
+
+.page-id-2 .post-box .post-box-text>p:first-of-type{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 0 0 15px;
+}
+
+.page-id-2 .post-box .post-box-text>p:nth-of-type(2){
+    font-size: 20px;
+    line-height: 1.3;
+    display: block;
+/*    height: calc();*/
+    max-height: 260px;
+    overflow: hidden;
+    margin: 0 0 30px;
+}
+
+.trailer_movie{
+    position: absolute;
+    bottom: 15%;
+}
+
+.trailer_movie p{
+    float: left;
+    font-size: 18px;
+    line-height: 0;
+    width: 110px;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #444;
+    margin: 0 1px 0 0;
+    transition: all 0.3s ease;
+}
+
+.trailer_movie p:hover{
+    color: #ddd;
+    background-color: #666;
+}
+
+.trailer_movie p:first-of-type{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.trailer_movie p:last-of-type{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+
+
+/**
+  * page-id-2 - artist
+  */
+
+.page-id-2 .container{
+    width: 100%;
+    padding: 0 5%;
+}
+
+.post-box-image,
+.post-box-image:hover{
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.17);
+}
+
+.page-id-2 article,
+.post-box:nth-child(2n),
+.post-box:nth-child(3n){
+    margin: 0;
+    padding: 0 0 31.68vw 0;
+    float: left;
+    width: 100%;
+    max-width: 25%;
+    height: 0;
+    overflow: hidden;
+    background-color: #1a1a1a;
+}
+
+.post-box:nth-child(4n){
+    margin-right: 0;
+}
+
+.page-id-2 .row{
+    margin: 0 auto 30px;
+}
+
+.page-id-2 .row:hover .post-box{
+    max-width: 10%;
+    opacity: 0.15;
+}
+
+.page-id-2 .row .post-box:hover{
+    max-width: 70%;
+    opacity: 1;
+}
+
+.page-id-2 .post-box .post-box-container{
+    height: 31.68vw;
+    width: 63vw;
+    margin: 0;
+    padding: 1vw;
+}
+
+.page-id-2 .post-box .post-box-image{
+    width: 20.5vw;
+    height: 100%;
+    padding: 0;
+    float: left;
+}
+
+.page-id-2 .post-box .post-box-container{
+/*    padding: 15px;*/
+    box-sizing: border-box;
+}
+
+.page-id-2 .post-box .post-box-text{
+    margin: 0;
+    padding: 0 3vw;
+    width: 40.5vw;
+    height: 31.68vw;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    float: right;
+}
+
+.page-id-2 .post-box .post-box-text h2{
+    margin: 20px 0 15px;
+    max-height: 104px;
+    overflow: hidden;
+}
+
+.page-id-2 .post-box .post-box-text h2 a{
+    font-size: 35px;
+    line-height: 1.3;
+}
+
+.page-id-2 .post-box .post-box-text>span{
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-block;
+    margin: 0 10px 30px 0;
+    color: #555;
+}
+
+.page-id-2 .post-box .post-box-text>span a{
+    font-size: 12px;
+    line-height: 0;
+    padding: 10px 8px;
+    background-color: #444;
+    border-radius: 2px;
+    vertical-align: middle;
+}
+
+.page-id-2 .post-box .post-box-text>span a:hover{
+    text-decoration: none;
+}
+
+.page-id-2 .post-box .post-box-text>p:first-of-type{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 0 0 15px;
+}
+
+.page-id-2 .post-box .post-box-text>p:nth-of-type(2){
+    font-size: 20px;
+    line-height: 1.3;
+    display: block;
+/*    height: calc();*/
+    max-height: 260px;
+    overflow: hidden;
+    margin: 0 0 30px;
+}
+
+.trailer_movie{
+    position: absolute;
+    bottom: 15%;
+}
+
+.trailer_movie p{
+    float: left;
+    font-size: 18px;
+    line-height: 0;
+    width: 110px;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #444;
+    margin: 0 1px 0 0;
+    transition: all 0.3s ease;
+}
+
+.trailer_movie p:hover{
+    color: #ddd;
+    background-color: #666;
+}
+
+.trailer_movie p:first-of-type{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.trailer_movie p:last-of-type{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 
 
 
 /***vvv   force hovering on the third post-box   vvv***/
 /*
-.archive .row .post-box:nth-of-type(1n),
+.page-page-id-2 .row .post-box:nth-of-type(1n),
 .archive .row .post-box:nth-of-type(2n){
     max-width: 10%;
     opacity: 0.15;
