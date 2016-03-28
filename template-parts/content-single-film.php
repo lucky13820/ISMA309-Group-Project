@@ -33,7 +33,7 @@
 
 							</div> <!-- /featured-media -->
 
-						<?php endif; ?>
+		<?php endif; ?>
 
 
     <div class="post-content">

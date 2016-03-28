@@ -320,10 +320,19 @@ p {
     border-bottom-right-radius: 4px;
 }
 
-
 .featured-media{
   width: 1080px;
   margin: auto;
+}
+
+p.artist-statement {
+  word-break: break-all;
+  width: 600px;
+}
+
+p.project-description{
+  word-break: break-all;
+  width: 600px;
 }
 
 /***vvv   force hovering on the third post-box   vvv***/
