@@ -142,7 +142,7 @@ p {
 
 .post-content-info .artist-content .artist-photo img.wide{
     height: 100%;
-    max-width: none;    
+    max-width: none;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -320,6 +320,11 @@ p {
     border-bottom-right-radius: 4px;
 }
 
+
+.featured-media{
+  width: 1080px;
+  margin: auto;
+}
 
 /***vvv   force hovering on the third post-box   vvv***/
 /*
