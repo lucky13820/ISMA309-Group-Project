@@ -9,13 +9,12 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('post-box'); ?> data-href="<?php the_permalink(); ?>">
+<article id="post-<?php the_ID(); ?>" <?php post_class('post-box'); ?> >
 
 	<div class="post-box-container">
         <div class="post-box-image" style="background-image: url(<?php the_field('poster'); ?>);"></div>
         <div class="post-box-text">
-            <?php the_title( sprintf( '<h2 class="post-box-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-            <?php the_excerpt(); ?>
+            <div class="post-title"><a rel="bookmark" href="<?php the_permalink(); ?>" ><?php the_title(); ?></a></div>
             <span><?php the_field('duration') ?></span>
             <?php
             $categories_list = get_the_category_list( esc_html__( ', ', 'caos' ) );
