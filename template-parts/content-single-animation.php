@@ -43,8 +43,10 @@
                 <p class="tagline"><?php the_field('tagline');?></p>
                 <h2>Artist Statement</h2>
                 <p class="artist-statement"><?php the_field('artist_statement');?></p>
-                <h2>Project Description</h2>
-                <p class="project-description"><?php the_field('project_description_synopsis');?></p>
+                <h2>Synopsis</h2>
+                <p class="synopsis"><?php the_field('synopsis');?></p>
+								<h2>Biography</h2>
+                <p class="biography"><?php the_field('biography');?></p>
             </div>
             <div class="artist-content">
                 <div class="artist-photo">
