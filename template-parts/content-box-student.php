@@ -9,8 +9,7 @@
 
 ?>
 
-
-<article id="post-<?php the_ID(); ?>" <?php post_class('post-box'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('post-box'); ?> data-href="<?php the_permalink(); ?>">
 
 	<div class="post-box-container">
         <div class="post-box-image" style="background-image: url(<?php the_field('artist_photo'); ?>);"></div>
