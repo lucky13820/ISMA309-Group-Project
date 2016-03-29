@@ -15,7 +15,7 @@
 	<div class="post-box-container">
         <div class="post-box-image" style="background-image: url(<?php the_field('poster'); ?>);"></div>
         <div class="post-box-text">
-            <div class="post-title"><a rel="bookmark" href="<?php the_permalink(); ?>" ><?php the_title(); ?></a></div>
+            <h2 class="post-box-title"><a rel="bookmark" href="<?php the_permalink(); ?>" ><?php the_title(); ?></a></h2>
             <span><?php the_field('duration') ?></span>
             <?php
             $categories_list = get_the_category_list( esc_html__( ', ', 'caos' ) );
