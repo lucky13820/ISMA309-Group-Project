@@ -30,7 +30,7 @@ p {
   * Header
   */
 
-#header{
+header#header.site-header{
     position: relative;
     margin-bottom: 0;
 }
