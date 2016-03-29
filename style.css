@@ -166,16 +166,6 @@ header#header.site-header{
   margin: auto;
 }
 
-p.artist-statement {
-  word-break: break-all;
-  width: 600px;
-}
-
-p.project-description{
-  word-break: break-all;
-  width: 600px;
-}
-
 
 /**
   * archive.php
