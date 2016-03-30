@@ -359,6 +359,27 @@ header#header.site-header{
     border-bottom-right-radius: 4px;
 }
 
+.cat_nav{
+  display: flex;
+}
+.cat_nav li{
+	float: left;
+  list-style: none;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.cat_nav a{
+  padding: 0, 1em;
+  color: grey;
+}
+
+.cat_nav a:hover{
+  color: white;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
 
 /***vvv   force hovering on the third post-box   vvv***/
 /*
