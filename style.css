@@ -43,9 +43,9 @@ header#header.site-header{
 }
 
 .site-header .logo_container .site-title{
-    line-height: 42px;
+    line-height: 0;
     padding-left: 20%;
-    margin-top: 5px;
+    margin: 0;
 }
 
 .site-header .col-md-7{
@@ -76,13 +76,17 @@ header#header.site-header{
 
 
 /**
-  * Film posts
+  * Film & animation posts
+  * Installation posts
   */
 
+.single-installation .post-content,
+.single-animation .post-content,
 .film .post-content{
     padding: 0;
 }
 
+/*div.featured-media,*/
 .post-content-video{
     width: 100vw;
     height: 56.25vw;
@@ -134,7 +138,7 @@ header#header.site-header{
     width: 100%;
     height: 0;
     padding-bottom: 133.33%;
-    padding-bottom: 100%;
+/*    padding-bottom: 100%;*/
     margin-bottom: 40px;
     overflow: hidden;
     position: relative;
@@ -161,9 +165,70 @@ header#header.site-header{
     font-weight: bold;
 }
 
+.post-content-info .artist-content p:not(.artist_name){
+    line-height: 1.4;
+    margin: 0;
+}
+
+.post-content-info .artist-content .location:before{
+    content: "Location: ";
+}
+
 .featured-media{
   width: 1080px;
   margin: auto;
+}
+
+
+/**
+  * Installation slideshow
+  */
+
+/* Prevent the slideshow from flashing on load */
+#slides {
+    display: none;
+}
+
+/* Center the slideshow */
+.container {
+    margin: 0 auto;
+}
+
+/* Text color */
+.slidesjs-pagination a,
+.slidesjs-navigation{
+    color: #eee;
+}
+
+.slidesjs-pagination{
+    width: 100vw;
+    text-align: center;
+}
+
+.slidesjs-pagination li{
+    display: inline;
+}
+
+.slidesjs-pagination .active {
+    color: #888;
+}
+
+.slidesjs-pagination a:hover,
+.slidesjs-navigation:hover{
+    color: #888;
+    text-decoration: none;
+}
+
+.slidesjs-navigation:first-of-type{
+    float: left;
+}
+
+.slidesjs-navigation:last-of-type{
+    float: right;
+}
+
+.container {
+    width: auto;
 }
 
 

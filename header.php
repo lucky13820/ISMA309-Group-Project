@@ -22,6 +22,7 @@
 <!-- End WP_Head -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="<?php bloginfo('stylesheet_directory');?>/js/jquery.slides.min.js"></script>
 </head>
 <?php
 //Check if Rest Api plugin is enable
