@@ -25,7 +25,18 @@
             <p><?php the_field('artist_name') ?></p>
             <p><?php the_field('tagline') ?></p>
             <div class="trailer_movie">
-                <p>Trailer</p>
+                <div class="trailer-button">
+                    <a href="#" data-featherlight="#mylightbox">Trailer</a>
+                    <div id="mylightbox">
+                    
+                       <video width="320" height="240" controls>
+                           <source src="<?php echo $_GET['trailer']; ?>" type="video/mp4">
+                           Your browser does not support the video tag.
+                        </video>
+                  
+                    </div>
+                </div>
+               
                 <p>Full Movie</p>
             </div>
         </div><!-- .post-box-text -->
