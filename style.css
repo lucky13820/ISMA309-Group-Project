@@ -76,13 +76,16 @@ header#header.site-header{
 
 
 /**
-  * Film posts
+  * Film & animation posts
+  * Installation posts
   */
 
+.single-installation .post-content,
 .film .post-content{
     padding: 0;
 }
 
+/*div.featured-media,*/
 .post-content-video{
     width: 100vw;
     height: 56.25vw;
@@ -159,6 +162,15 @@ header#header.site-header{
 .post-content-info .artist-content .artist_name{
     font-size: 1.2em;
     font-weight: bold;
+}
+
+.post-content-info .artist-content p:not(.artist_name){
+    line-height: 1.4;
+    margin: 0;
+}
+
+.post-content-info .artist-content .location:before{
+    content: "Location: ";
 }
 
 .featured-media{

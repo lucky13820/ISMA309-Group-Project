@@ -53,6 +53,12 @@
                     <img src="<?php the_field('artist_photo'); ?>" alt="">
                 </div>
                 <p class="artist_name"><?php the_field('artist_name');?></p>
+                <?php if( get_field('e-mail') ): ?>
+                    <p class="e-mail"><?php the_field('e-mail') ?></p>
+                <?php endif; ?>
+                <?php if( get_field('personal_website') ): ?>
+                    <p class="personal-site"><?php the_field('personal_website') ?></p>
+                <?php endif; ?>
             </div>
         </div>
     	<div class="entry">
