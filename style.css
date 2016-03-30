@@ -181,6 +181,58 @@ header#header.site-header{
 
 
 /**
+  * Installation slideshow
+  */
+
+/* Prevent the slideshow from flashing on load */
+#slides {
+    display: none;
+}
+
+/* Center the slideshow */
+.container {
+    margin: 0 auto;
+}
+
+/* Text color */
+.slidesjs-pagination a,
+.slidesjs-navigation{
+    color: #eee;
+}
+
+.slidesjs-pagination{
+    width: 100vw;
+    text-align: center;
+}
+
+.slidesjs-pagination li{
+    display: inline;
+}
+
+.slidesjs-pagination .active {
+    color: #888;
+}
+
+.slidesjs-pagination a:hover,
+.slidesjs-navigation:hover{
+    color: #888;
+    text-decoration: none;
+}
+
+.slidesjs-navigation:first-of-type{
+    float: left;
+}
+
+.slidesjs-navigation:last-of-type{
+    float: right;
+}
+
+.container {
+    width: auto;
+}
+
+
+/**
   * archive.php
   * page.php
   * page-student.php

@@ -10,16 +10,51 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <div class="featured-media">
-        <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
-            <?php the_post_thumbnail('post-image'); ?>
-            <?php if ( !empty(get_post(get_post_thumbnail_id())->post_excerpt) ) : ?>
-                <div class="media-caption-container">
-                    <p class="media-caption"><?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?></p>
-                </div>
+    <style>
+
+    </style>
+    <div class="container">
+        <div id="slides">
+            <?php if( get_field('supporting_image') ): ?>
+                <img src="<?php the_field('supporting_image'); ?>" alt="">
             <?php endif; ?>
-        </a>
-    </div> <!-- /featured-media -->
+            <?php if( get_field('supporting_images_2') ): ?>
+                <img src="<?php the_field('supporting_image_2'); ?>" alt="">
+            <?php endif; ?>
+            <?php if( get_field('supporting_image_3') ): ?>
+                <img src="<?php the_field('supporting_image_2'); ?>" alt="">
+            <?php endif; ?>
+            <?php if( get_field('supporting_image_4') ): ?>
+                <img src="<?php the_field('supporting_image_2'); ?>" alt="">
+            <?php endif; ?>
+            <?php if( get_field('supporting_image_5') ): ?>
+                <img src="<?php the_field('supporting_image_2'); ?>" alt="">
+            <?php endif; ?>
+            <?php if( get_field('supporting_image_6') ): ?>
+                <img src="<?php the_field('supporting_image_2'); ?>" alt="">
+            <?php endif; ?>
+            <?php if( get_field('supporting_image_7') ): ?>
+                <img src="<?php the_field('supporting_image_2'); ?>" alt="">
+            <?php endif; ?>
+            <?php if( get_field('supporting_image_8') ): ?>
+                <img src="<?php the_field('supporting_image_2'); ?>" alt="">
+            <?php endif; ?>
+            <?php if( get_field('supporting_image_9') ): ?>
+                <img src="<?php the_field('supporting_image_2'); ?>" alt="">
+            <?php endif; ?>
+            <?php if( get_field('supporting_image_10') ): ?>
+                <img src="<?php the_field('supporting_image_2'); ?>" alt="">
+            <?php endif; ?>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            $('#slides').slidesjs({
+                width: 940,
+                height: 528
+            });
+        });
+    </script>
     <div class="post-content">
         <div class="post-content-info">
             <div class="video-content">
