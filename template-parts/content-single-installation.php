@@ -10,32 +10,16 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php $thumbnail_src = ""; ?>
-	<?php if ( has_post_thumbnail() ) : ?>
-
-							<div class="featured-media">
-
-								<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
-
-									<?php the_post_thumbnail('post-image'); ?>
-
-									<?php if ( !empty(get_post(get_post_thumbnail_id())->post_excerpt) ) : ?>
-
-										<div class="media-caption-container">
-
-											<p class="media-caption"><?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?></p>
-
-										</div>
-
-									<?php endif; ?>
-
-								</a>
-
-							</div> <!-- /featured-media -->
-
-		<?php endif; ?>
-
-
+    <div class="featured-media">
+        <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
+            <?php the_post_thumbnail('post-image'); ?>
+            <?php if ( !empty(get_post(get_post_thumbnail_id())->post_excerpt) ) : ?>
+                <div class="media-caption-container">
+                    <p class="media-caption"><?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?></p>
+                </div>
+            <?php endif; ?>
+        </a>
+    </div> <!-- /featured-media -->
     <div class="post-content">
         <div class="post-content-info">
             <div class="video-content">
