@@ -9,6 +9,19 @@
 
 get_header(); ?>
 
+<?php
+
+$terms = get_terms( 'animationcat' );
+if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
+    echo '<ul class="cat_nav">';
+		echo '<li><a href="' . esc_attr(get_post_type_archive_link( 'animation' )) . '">'. All .'</a></li>';
+    foreach ( $terms as $term ) {
+        echo '<li><a href="' . esc_attr(get_term_link($term, $taxonomy)) . '">' . $term->name . '</a></li>';
+    }
+    echo '</ul>';
+}
+?>
+
 
 	<main id="main" class="site-main" role="main">
 

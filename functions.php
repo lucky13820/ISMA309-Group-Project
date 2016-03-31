@@ -5,5 +5,13 @@ function theme_enqueue_styles() {
 }
 
 
+// Custom Taxonomy Code
+add_action( 'init', 'build_taxonomies', 0 );
+
+function build_taxonomies() {
+    register_taxonomy( 'animationcat', 'animation', array( 'hierarchical' => true, 'label' => 'Animation', 'query_var' => true, 'rewrite' => true ) );
+    register_taxonomy( 'filmcat', 'film', array( 'hierarchical' => true, 'label' => 'Film', 'query_var' => true, 'rewrite' => true ) );
+}
+
 
 ?>
