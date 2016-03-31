@@ -62,7 +62,7 @@ header#header.site-header{
     line-height: 42px;
 }
 
-#jqueryslidemenu ul.nav > li > a {
+#jqueryslidemenu ul.nav > li > a{
     color: #b4b4b4;
     font-size: 18px;
 }
@@ -74,6 +74,13 @@ header#header.site-header{
     background-color: transparent;
 }
 
+#container a.selected{
+  color: white;
+}
+
+#jqueryslidemenu ul.nav > li > a.current{
+  color: white;
+}
 
 /**
   * Film & animation posts
@@ -441,6 +448,7 @@ header#header.site-header{
 
 .cat_nav a:hover{
   color: white;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none;
 }

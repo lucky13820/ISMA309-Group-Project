@@ -32,7 +32,7 @@ if( is_plugin_active( 'rest-api/plugin.php' ) ){
     $caos_rest_api_plugin = "true";
 }
 ?>
-<body <?php body_class(); ?> data-name="<?php echo bloginfo( 'name' ); ?>" data-url="<?php echo esc_url( home_url( '/' ) ); ?>" data-rest-api="<?php echo $caos_rest_api_plugin; ?>">
+<body <?php body_class(); ?> data-name="<?php echo bloginfo( 'name' ); ?>" data-url="<?php echo esc_url( home_url( '/' ) ); ?>" data-rest-api="<?php echo $caos_rest_api_plugin; ?>" >
     <?php
     $header_image = "";
     if ( get_header_image() ){
@@ -71,6 +71,15 @@ if( is_plugin_active( 'rest-api/plugin.php' ) ){
                                 'walker'            => new caos_bootstrap_navwalker()
                             ));
                             ?>
+                            <script type="text/javascript">
+                              $(document).ready(function(){
+                                $('#primary-menu a').each(function(index) {
+                              if(this.href.trim() == window.location)
+                                $(this).addClass("current");
+                              });
+
+                                });
+                                </script>
                         </nav>
                     </div><!-- /ql_nav_collapse -->
                 </div><!-- /col-md-7 -->
@@ -82,4 +91,14 @@ if( is_plugin_active( 'rest-api/plugin.php' ) ){
 
     <?php if ( !is_single() ) { ?>
     <div id="container" class="container">
+      <script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('#cat_nav a').each(function(index) {
+            if(this.href.trim() == window.location)
+              $(this).addClass("selected");
+            });
+
+          });
+      </script>
     <?php } ?>
