@@ -16,34 +16,34 @@
     <div class="container">
         <div id="slides">
             <?php if( get_field('supporting_image') ): ?>
-                <img src="<?php the_field('supporting_image'); ?>" alt="">
+                <div class="slider-image" style="background-image: url(<?php the_field('supporting_image'); ?>);"></div>
             <?php endif; ?>
             <?php if( get_field('supporting_images_2') ): ?>
-                <img src="<?php the_field('supporting_images_2'); ?>" alt="">
+                <div class="slider-image" style="background-image: url(<?php the_field('supporting_images_2'); ?>);"></div>
             <?php endif; ?>
             <?php if( get_field('supporting_image_3') ): ?>
-                <img src="<?php the_field('supporting_image_3'); ?>" alt="">
+                <div class="slider-image" style="background-image: url(<?php the_field('supporting_image_3'); ?>);"></div>
             <?php endif; ?>
             <?php if( get_field('supporting_image_4') ): ?>
-                <img src="<?php the_field('supporting_image_4'); ?>" alt="">
+                <div class="slider-image" style="background-image: url(<?php the_field('supporting_image_4'); ?>);"></div>
             <?php endif; ?>
             <?php if( get_field('supporting_image_5') ): ?>
-                <img src="<?php the_field('supporting_image_5'); ?>" alt="">
+                <div class="slider-image" style="background-image: url(<?php the_field('supporting_image_5'); ?>);"></div>
             <?php endif; ?>
             <?php if( get_field('supporting_image_6') ): ?>
-                <img src="<?php the_field('supporting_image_6'); ?>" alt="">
+                <div class="slider-image" style="background-image: url(<?php the_field('supporting_image_6'); ?>);"></div>
             <?php endif; ?>
             <?php if( get_field('supporting_image_7') ): ?>
-                <img src="<?php the_field('supporting_image_7'); ?>" alt="">
+                <div class="slider-image" style="background-image: url(<?php the_field('supporting_image_7'); ?>);"></div>
             <?php endif; ?>
             <?php if( get_field('supporting_image_8') ): ?>
-                <img src="<?php the_field('supporting_image_8'); ?>" alt="">
+                <div class="slider-image" style="background-image: url(<?php the_field('supporting_image_8'); ?>);"></div>
             <?php endif; ?>
             <?php if( get_field('supporting_image_9') ): ?>
-                <img src="<?php the_field('supporting_image_9'); ?>" alt="">
+                <div class="slider-image" style="background-image: url(<?php the_field('supporting_image_9'); ?>);"></div>
             <?php endif; ?>
             <?php if( get_field('supporting_image_10') ): ?>
-                <img src="<?php the_field('supporting_image_10'); ?>" alt="">
+                <div class="slider-image" style="background-image: url(<?php the_field('supporting_image_10'); ?>);"></div>
             <?php endif; ?>
         </div>
     </div>
