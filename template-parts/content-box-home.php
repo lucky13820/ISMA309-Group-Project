@@ -12,7 +12,9 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('post-box'); ?> data-href="<?php the_permalink(); ?>">
 
 	<div class="post-box-container">
+			<a rel="bookmark" href="<?php the_permalink(); ?>" >
         <div class="post-box-image" style="background-image: url(<?php the_field('poster'); ?>);"></div>
+			</a>
         <div class="post-box-text">
             <h2 class="post-box-title"><a rel="bookmark" href="<?php the_permalink(); ?>" ><?php the_title(); ?></a></h2>
             <span><?php the_field('duration') ?></span>
@@ -26,7 +28,7 @@
             <p><?php the_field('tagline') ?></p>
             <div class="trailer_movie">
                 <p>Trailer</p>
-                <p>Full Movie</p>
+                <p><a rel="bookmark" href="<?php the_permalink(); ?>" >Full Movie</a></p>
             </div>
         </div><!-- .post-box-text -->
 

@@ -481,6 +481,14 @@ header#header.site-header{
   text-decoration: none;
 }
 
+.trailer_movie a{
+  color: #999999;
+  text-decoration: none;
+}
+
+.trailer_movie a:hover{
+  color: #ddd;
+}
 
 /***vvv   force hovering on the third post-box   vvv***/
 /*
