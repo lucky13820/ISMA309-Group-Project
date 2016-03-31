@@ -19,39 +19,39 @@
                 <img src="<?php the_field('supporting_image'); ?>" alt="">
             <?php endif; ?>
             <?php if( get_field('supporting_images_2') ): ?>
-                <img src="<?php the_field('supporting_image_2'); ?>" alt="">
+                <img src="<?php the_field('supporting_images_2'); ?>" alt="">
             <?php endif; ?>
             <?php if( get_field('supporting_image_3') ): ?>
-                <img src="<?php the_field('supporting_image_2'); ?>" alt="">
+                <img src="<?php the_field('supporting_image_3'); ?>" alt="">
             <?php endif; ?>
             <?php if( get_field('supporting_image_4') ): ?>
-                <img src="<?php the_field('supporting_image_2'); ?>" alt="">
+                <img src="<?php the_field('supporting_image_4'); ?>" alt="">
             <?php endif; ?>
             <?php if( get_field('supporting_image_5') ): ?>
-                <img src="<?php the_field('supporting_image_2'); ?>" alt="">
+                <img src="<?php the_field('supporting_image_5'); ?>" alt="">
             <?php endif; ?>
             <?php if( get_field('supporting_image_6') ): ?>
-                <img src="<?php the_field('supporting_image_2'); ?>" alt="">
+                <img src="<?php the_field('supporting_image_6'); ?>" alt="">
             <?php endif; ?>
             <?php if( get_field('supporting_image_7') ): ?>
-                <img src="<?php the_field('supporting_image_2'); ?>" alt="">
+                <img src="<?php the_field('supporting_image_7'); ?>" alt="">
             <?php endif; ?>
             <?php if( get_field('supporting_image_8') ): ?>
-                <img src="<?php the_field('supporting_image_2'); ?>" alt="">
+                <img src="<?php the_field('supporting_image_8'); ?>" alt="">
             <?php endif; ?>
             <?php if( get_field('supporting_image_9') ): ?>
-                <img src="<?php the_field('supporting_image_2'); ?>" alt="">
+                <img src="<?php the_field('supporting_image_9'); ?>" alt="">
             <?php endif; ?>
             <?php if( get_field('supporting_image_10') ): ?>
-                <img src="<?php the_field('supporting_image_2'); ?>" alt="">
+                <img src="<?php the_field('supporting_image_10'); ?>" alt="">
             <?php endif; ?>
         </div>
     </div>
     <script>
         $(function() {
             $('#slides').slidesjs({
-                width: 940,
-                height: 528
+                width: 100,
+                height: 56.25
             });
         });
     </script>
