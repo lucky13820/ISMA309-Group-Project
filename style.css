@@ -199,6 +199,7 @@ header#header.site-header{
 /* Center the slideshow */
 .container {
     margin: 0 auto;
+    width: 1080px;
 }
 
 /* Text color */
@@ -245,10 +246,6 @@ header#header.site-header{
 .slidesjs-navigation:last-of-type{
     float: right;
     padding: 10px 15px;
-}
-
-.container {
-    width: 1080px;
 }
 
 .slidesjs-container{
