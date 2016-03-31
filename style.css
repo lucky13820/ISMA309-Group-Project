@@ -201,12 +201,15 @@ header#header.site-header{
 }
 
 .slidesjs-pagination{
-    width: 100vw;
+    width: 100%;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .slidesjs-pagination li{
     display: inline;
+    padding: 0 5px;
 }
 
 .slidesjs-pagination .active {
@@ -228,7 +231,11 @@ header#header.site-header{
 }
 
 .container {
-    width: auto;
+    width: 1080px;
+}
+
+.slidesjs-container{
+    margin-bottom: 15px;
 }
 
 
