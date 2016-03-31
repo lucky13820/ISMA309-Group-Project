@@ -10,10 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <style>
-
-    </style>
-    <div class="container">
+    <div class="slideshow-container">
         <div id="slides">
             <?php if( get_field('supporting_image') ): ?>
                 <div class="slider-image" style="background-image: url(<?php the_field('supporting_image'); ?>);"></div>
