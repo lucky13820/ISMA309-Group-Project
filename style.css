@@ -198,22 +198,30 @@ header#header.site-header{
 .slidesjs-pagination a,
 .slidesjs-navigation{
     color: #eee;
+    padding: 10px;
+    vertical-align: middle;
+    line-height: 0;
+    transition: color 0.2s ease-in-out;
 }
 
 .slidesjs-pagination{
     width: 100%;
+    width: calc(100% - 120px);
     text-align: center;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding-left: 0;
+    transform: translateY(5px);
 }
 
 .slidesjs-pagination li{
     display: inline;
-    padding: 0 5px;
+    font-size: 0.75em;
+    line-height: 0;
+    border-radius: 50%;
 }
 
 .slidesjs-pagination .active {
-    color: #888;
+    color: #555;
 }
 
 .slidesjs-pagination a:hover,
@@ -224,10 +232,12 @@ header#header.site-header{
 
 .slidesjs-navigation:first-of-type{
     float: left;
+    padding: 10px 15px;
 }
 
 .slidesjs-navigation:last-of-type{
     float: right;
+    padding: 10px 15px;
 }
 
 .container {
