@@ -25,8 +25,21 @@
             <p><?php the_field('artist_name') ?></p>
             <p><?php the_field('tagline') ?></p>
             <div class="trailer_movie">
-                <p>Trailer</p>
+                <div class="trailer-button">
+                    
+                    <a href="#" data-featherlight="#trailer-lightbox"><p>Trailer</p></a>
+                    <div id="trailer-lightbox">
+                    
+                       <video width="960" height="540" controls>
+                           <source src="<?php echo get_site_url(); ?>/wp-content/uploads/2016/03/SampleVideo_1280x720_1mb-1.mp4" type="video/mp4">
+                           Your browser does not support the video tag.
+                        </video>
+                  
+                    </div>
+                </div>
+                <div class="movie-button">
                 <p>Full Movie</p>
+                </div>
             </div>
         </div><!-- .post-box-text -->
 
