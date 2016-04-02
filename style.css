@@ -372,8 +372,25 @@ header#header.site-header{
     border-bottom-right-radius: 4px;
 }
 
+
+
 /* trailer lightbox */
 
+#trailer-lightbox {
+    display: none;
+}
+
+.featherlight-content>#trailer-lightbox {
+    display: block;
+}
+
+.featherlight .featherlight-content {
+    background: #1a1a1a;
+}
+
+.featherlight .featherlight-close-icon {
+    background: none;
+    color: #eee;
 
 
 

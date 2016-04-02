@@ -17,8 +17,6 @@
 
 <?php wp_footer(); ?>
 
-<script src="//code.jquery.com/jquery-latest.js"></script>
-<script src="//cdn.rawgit.com/noelboss/featherlight/1.4.0/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 
 
 </body>
