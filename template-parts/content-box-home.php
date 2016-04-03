@@ -27,10 +27,7 @@
             <p><?php the_field('artist_name') ?></p>
             <p><?php the_field('tagline') ?></p>
             <div class="trailer_movie">
-<<<<<<< HEAD
-                <p>Trailer</p>
-                <p><a rel="bookmark" href="<?php the_permalink(); ?>" >Full Movie</a></p>
-=======
+
                 <div class="trailer-button">
                     
                     <a href="#" data-featherlight="#trailer-lightbox"><p>Trailer</p></a>
@@ -45,9 +42,9 @@ echo do_shortcode('[types field="trailer" autoplay="on" width="960" height="540"
                     </div>
                 </div>
                 <div class="movie-button">
-                <p>Full Movie</p>
+                 <a rel="bookmark" href="<?php the_permalink(); ?>" ><p>Full Movie</p></a>
                 </div>
->>>>>>> trailer-lightbox-test
+
             </div>
         </div><!-- .post-box-text -->
 

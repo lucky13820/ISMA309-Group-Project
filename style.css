@@ -490,6 +490,14 @@ header#header.site-header{
   color: #ddd;
 }
 
+.trailer-button {
+    display:inline;
+}
+
+.movie-button {
+    display: inline;
+}
+
 
 /* trailer lightbox */
 
