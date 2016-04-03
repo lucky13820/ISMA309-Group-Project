@@ -391,7 +391,14 @@ header#header.site-header{
 .featherlight .featherlight-close-icon {
     background: none;
     color: #eee;
-
+}
+    
+#trailer-lightbox {
+    width: 1280px;
+    height: 720px;
+    
+    
+}
 
 
 /***vvv   force hovering on the third post-box   vvv***/

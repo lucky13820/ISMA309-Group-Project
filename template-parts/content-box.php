@@ -31,10 +31,9 @@
                     <a href="#" data-featherlight="#trailer-lightbox"><p>Trailer</p></a>
                     <div id="trailer-lightbox">
                     
-                       <video width="960" height="540" controls>
-                           <source src="<?php echo get_site_url(); ?>/wp-content/uploads/2016/03/SampleVideo_1280x720_1mb-1.mp4" type="video/mp4">
-                           Your browser does not support the video tag.
-                        </video>
+                        <?php
+echo do_shortcode('[types field="trailer" autoplay="on" width="1280" height="720"][/types]');
+?> 
                   
                     </div>
                 </div>
