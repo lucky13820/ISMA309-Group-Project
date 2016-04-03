@@ -490,6 +490,56 @@ header#header.site-header{
   color: #ddd;
 }
 
+
+/* trailer lightbox */
+
+#trailer-lightbox {
+    display: none;
+}
+
+.featherlight-content>#trailer-lightbox {
+    display: block;
+}
+
+.featherlight .featherlight-content {
+    background: #1a1a1a;
+}
+
+.featherlight .featherlight-close-icon {
+    background: none;
+    color: #eee;
+}
+    
+#trailer-lightbox {
+    width: 1280px;
+    height: 750px;
+    
+    
+}
+
+
+.mejs-container, .mejs-embed, .mejs-embed body, .mejs-container .mejs-controls {
+    width: 1280px;
+    height: 720px;
+    
+    
+}
+
+div#mep_0.mejs-container.svg.wp-video-shortcode.mejs-video[style] {
+    width: 1280px !important;
+    height: 720px !important;
+}
+    
+div#trailer-lightbox.featherlight-inner>div.wp-video>div#mep_0.mejs-container.svg.wp-video-shortcode.mejs-video>div.mejs-inner>div.mejs-layers>div.mejs-overlay.mejs-layer.mejs-overlay-play>div.mejs-overlay-button {
+    display: none;
+}
+
+div#trailer-lightbox.featherlight-inner>div.wp-video>div#mep_0.mejs-container.svg.wp-video-shortcode.mejs-video>div.mejs-inner>div.mejs-layers>div.mejs-overlay.mejs-layer.mejs-overlay-play>div.mejs-overlay-button:hover {
+    display: block;
+}
+
+
+
 /***vvv   force hovering on the third post-box   vvv***/
 /*
 .archive .row .post-box:nth-of-type(1n),

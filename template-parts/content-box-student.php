@@ -27,8 +27,22 @@
             <p><?php the_field('artist_name') ?></p>
             <p><?php the_field('tagline') ?></p>
             <div class="trailer_movie">
-                <p>Trailer</p>
+                <div class="trailer-button">
+                    
+                    <a href="#" data-featherlight="#trailer-lightbox"><p>Trailer</p></a>
+                    <div id="trailer-lightbox">
+                    
+                       
+                        <?php
+echo do_shortcode('[types field="trailer" autoplay="on" width="960" height="540"][/types]');
+?> 
+                  
+                  
+                    </div>
+                </div>
+                <div class="movie-button">
                 <p>Full Movie</p>
+                </div>
             </div>
         </div><!-- .post-box-text -->
 

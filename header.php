@@ -16,6 +16,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<link href="//cdn.rawgit.com/noelboss/featherlight/1.4.0/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+  
 
 <!-- WP_Head -->
 <?php wp_head(); ?>
@@ -24,6 +26,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="<?php bloginfo('stylesheet_directory');?>/js/jquery.slides.js"></script>
 </head>
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.4.0/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 <?php
 //Check if Rest Api plugin is enable
 $caos_rest_api_plugin = "false";
