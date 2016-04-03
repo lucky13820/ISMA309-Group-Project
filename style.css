@@ -395,10 +395,32 @@ header#header.site-header{
     
 #trailer-lightbox {
     width: 1280px;
+    height: 750px;
+    
+    
+}
+
+
+.mejs-container, .mejs-embed, .mejs-embed body, .mejs-container .mejs-controls {
+    width: 1280px;
     height: 720px;
     
     
 }
+
+div#mep_0.mejs-container.svg.wp-video-shortcode.mejs-video[style] {
+    width: 1280px !important;
+    height: 720px !important;
+}
+    
+div#trailer-lightbox.featherlight-inner>div.wp-video>div#mep_0.mejs-container.svg.wp-video-shortcode.mejs-video>div.mejs-inner>div.mejs-layers>div.mejs-overlay.mejs-layer.mejs-overlay-play>div.mejs-overlay-button {
+    display: none;
+}
+
+div#trailer-lightbox.featherlight-inner>div.wp-video>div#mep_0.mejs-container.svg.wp-video-shortcode.mejs-video>div.mejs-inner>div.mejs-layers>div.mejs-overlay.mejs-layer.mejs-overlay-play>div.mejs-overlay-button:hover {
+    display: block;
+}
+
 
 
 /***vvv   force hovering on the third post-box   vvv***/
