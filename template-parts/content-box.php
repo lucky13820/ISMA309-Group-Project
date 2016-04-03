@@ -35,7 +35,7 @@
                     
                        
                         <?php
-echo do_shortcode('[types field="trailer" autoplay="on" width="960" height="540"][/types]');
+echo do_shortcode('[types field="trailer" autoplay="on" width="1280" height="720"][/types]');
 ?> 
                   
                   

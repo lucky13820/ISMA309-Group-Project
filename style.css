@@ -546,6 +546,10 @@ div#trailer-lightbox.featherlight-inner>div.wp-video>div#mep_0.mejs-container.sv
     display: block;
 }
 
+.wp-video-shortcode {
+    width: 1280px !important;
+    height: 720px !important;
+}
 
 
 /***vvv   force hovering on the third post-box   vvv***/
