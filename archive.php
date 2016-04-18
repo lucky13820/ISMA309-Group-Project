@@ -1,6 +1,12 @@
 <?php
+/*
+Template Name: Archive
+*/
+?>
+
+<?php
 /**
- * The template for displaying archive pages.
+ *
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -16,9 +22,27 @@ get_header(); ?>
 
             <div class="post-box-list">
 
+							<?php
+
+							if ( get_query_var( 'paged' ) ) { $paged = get_query_var( 'paged' ); }
+							elseif ( get_query_var( 'page' ) ) { $paged = get_query_var( 'page' ); }
+							else { $paged = 1; }
+
+    // set up our archive arguments
+    $archive_args = array(
+      post_type => array( 'animation', 'film', 'installation' ),
+			paged => $paged, 
+			// get only posts
+        // this will display all posts on one page
+    );
+
+    // new instance of WP_Quert
+    $archive_query = new WP_Query( $archive_args );
+
+  ?>
                 <?php if (have_posts()) :
                     $i=0; // counter
-                    while(have_posts()) : the_post();
+                    while ( $archive_query->have_posts() ) : $archive_query->the_post();
                         if($i%4==0) { // if counter is multiple of 4, put an opening div ?>
                         <!-- <?php echo ($i+1).'-'; echo ($i+4); ?> -->
                         <div class="row">
@@ -43,7 +67,7 @@ get_header(); ?>
                 <?php endif; ?>
 
             </div><!-- .post-box-list -->
-            <?php get_template_part( 'template-parts/pagination', 'archive' ); ?>
+            <?php get_template_part( 'template-parts/pagination-home', 'archive' ); ?>
         <?php else : ?>
             <?php get_template_part( 'template-parts/content', 'none' ); ?>
         <?php endif; ?>

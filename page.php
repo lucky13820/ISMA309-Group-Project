@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * The main template file.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -20,7 +20,8 @@ get_header(); ?>
 
     // set up our archive arguments
     $archive_args = array(
-      post_type => array( 'animation', 'film', 'installation' ),     // get only posts
+      post_type => array( 'animation', 'film', 'installation' ),
+			   // get only posts
         // this will display all posts on one page
     );
 
@@ -41,7 +42,7 @@ get_header(); ?>
                              * If you want to override this in a child theme, then include a file
                              * called content-___.php (where ___ is the Post Format name) and that will be used instead.
                              */
-                            get_template_part( 'template-parts/content-box-home', get_post_format() );
+                            get_template_part( 'template-parts/content-box', get_post_format() );
                         ?>
                         <?php $i++;
                         if($i%4==0) { // if counter is multiple of 4, put an closing div ?>

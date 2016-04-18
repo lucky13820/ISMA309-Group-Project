@@ -4,7 +4,7 @@
  Description:  Caos Child Theme
  Author:       ISMA 309
  Author URI:   http://example.com
- Template:     Caos
+ Template:     caos
  Version:      1.0.0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
@@ -188,6 +188,8 @@ header#header.site-header{
 .featured-media{
   max-width: 1080px;
   margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -273,6 +275,7 @@ header#header.site-header{
   * page-student.php
   */
 
+.page .container,
 .archive .container,
 .page .container,
 .page-student .container{
@@ -509,6 +512,7 @@ header#header.site-header{
 
 .featherlight-content>#trailer-lightbox {
     display: block;
+    cursor: default;
 }
 
 .featherlight .featherlight-content {
@@ -519,7 +523,7 @@ header#header.site-header{
     background: none;
     color: #eee;
 }
-    
+
 #trailer-lightbox {
     width: 1280px;
     height: 750px;
@@ -527,15 +531,15 @@ header#header.site-header{
 
 
 .mejs-container, .mejs-embed, .mejs-embed body, .mejs-container .mejs-controls {
-    width: 1280px;
-    height: 720px;
+    width: 100%;
+    height: auto;
 }
 
 div#mep_0.mejs-container.svg.wp-video-shortcode.mejs-video[style] {
     width: 1280px !important;
     height: 720px !important;
 }
-    
+
 div#trailer-lightbox.featherlight-inner>div.wp-video>div#mep_0.mejs-container.svg.wp-video-shortcode.mejs-video>div.mejs-inner>div.mejs-layers>div.mejs-overlay.mejs-layer.mejs-overlay-play>div.mejs-overlay-button {
     display: none;
 }
@@ -548,6 +552,9 @@ div#trailer-lightbox.featherlight-inner>div.wp-video>div#mep_0.mejs-container.sv
     width: 1280px !important;
     height: 720px !important;
 }
+
+
+
 
 
 /***vvv   force hovering on the third post-box   vvv***/

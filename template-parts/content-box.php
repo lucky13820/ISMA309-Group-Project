@@ -29,16 +29,16 @@
          <div class="trailer_movie">
 
                 <div class="trailer-button">
-                    
+
                     <a href="#" data-featherlight="#trailer-lightbox"><p>Trailer</p></a>
                     <div id="trailer-lightbox">
-                    
-                       
+
+
                         <?php
 echo do_shortcode('[types field="trailer" autoplay="on" width="1280" height="720"][/types]');
-?> 
-                  
-                  
+?>
+
+
                     </div>
                 </div>
                 <div class="movie-button">
